@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background=" #d4e1dc "
+    app:cardElevation='5dp'
+    app:cardCornerRadius='12dp'
+    >
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/Tourimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/transview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/TourTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Ratingbar"
+            android:layout_marginBottom="35dp"
+            android:text="TITLE"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/Ratingbar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TourDescription"
+            android:layout_marginTop="5dp"
+            android:progressTint="@color/rating"
+            android:layout_marginBottom="30dp"
+
+            android:padding="10dp"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/TourDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="TITLE text goes here"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+
+
+    </RelativeLayout >
+
+</androidx.cardview.widget.CardView>
